@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Text File Storage</title>
+    </head>
+    <body>
+        <ul>
+            {% for post in posts %}
+            <li><a href='/uploads/{{ post.id }}'>{{ post.name }}</a></li> 
+            {% endfor %}
+        </ul>
+        <a href='/upload'>Upload new file</a>
+    </body>
+</html>
